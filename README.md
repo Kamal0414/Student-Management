@@ -1,7 +1,3 @@
-# Student-Management
-
----
-
 # Student Manager
 
 A modern, responsive web app for managing student records.  
