@@ -21,12 +21,6 @@ Add, edit, delete, sort, filter, export, and import student data—all in your b
 - **Loading indicator** for async operations
 - **Modern UI** with notifications and smooth UX
 
----
-
-## Demo
-
-> _You can try a live demo by [clicking here](#)_  
-> _(Replace with your GitHub Pages or deployment link)_
 
 ---
 
@@ -35,7 +29,7 @@ Add, edit, delete, sort, filter, export, and import student data—all in your b
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/student-manager.git
+git clone https://github.com/Kamal0414/student-manager.git
 cd student-manager
 ```
 
@@ -90,11 +84,6 @@ student-manager/
 Pull requests and suggestions are welcome!  
 For major changes, please open an issue first to discuss what you’d like to change.
 
----
-
-## License
-
-[MIT](LICENSE)
 
 ---
 
