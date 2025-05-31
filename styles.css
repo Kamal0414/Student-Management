@@ -1,0 +1,268 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 95%;
+}
+
+h1 {
+  background-color: #4f46e5;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px; /* Reduce gap between fields */
+  padding: 16px;
+  background-color: #f3f4f6;
+  border-bottom: 1px solid #e5e7eb;
+  justify-content: flex-start;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  min-width: 180px;  /* Ensures labels and inputs stack nicely */
+  max-width: 220px;  /* Prevents from growing too wide */
+  flex: 1 1 180px;
+}
+
+form input, form button {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form input {
+  width: 100%;
+  max-width: 200px;
+  min-width: 100px;
+  padding: 7px 10px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  margin-bottom: 0;         /* Remove default margin */
+}
+
+form button {
+  align-self: flex-end;
+  width: 120px;
+  min-width: 100px;
+  padding: 8px;
+  margin-top: 8px;
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form button:hover {
+  background-color: #4338ca;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: #f3f4f6;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.actions button, .actions input {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.actions button {
+  background-color: #4f46e5;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s;
+}
+
+.actions button:hover {
+  background-color: #4338ca;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+th {
+  background-color: #f3f4f6;
+}
+
+tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+tr:hover {
+  background-color: #f1f5f9;
+}
+
+button.edit-btn, button.delete-btn {
+  background-color: #10b981;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95em;
+  transition: background 0.2s;
+}
+
+button.edit-btn:hover {
+  background-color: #059669;
+}
+
+button.delete-btn {
+  background-color: #ef4444;
+}
+
+button.delete-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Responsive Styles */
+@media (max-width: 700px) {
+  .container {
+    margin: 10px auto;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    padding: 14px;
+  }
+
+  form {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .form-group, form input, form button {
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+  }
+  form label {
+  margin-bottom: 4px;       /* Small space between label and input */
+  font-size: 1rem;
+}
+  form button {
+    margin-top: 8px;
+  }
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+    gap: 0;
+  }
+
+  .actions input, .actions button {
+    width: 100%;
+    margin: 6px 0;
+    font-size: 1em;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 16px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    background: #fff;
+    padding: 8px 0;
+  }
+
+  td {
+    text-align: left;
+    padding: 10px 16px;
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  td:last-child {
+    border-bottom: none;
+  }
+
+  td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+    color: #6366f1;
+    font-size: 0.97em;
+  }
+
+  button.edit-btn, button.delete-btn {
+    width: 48%;
+    margin: 4px 1%;
+    font-size: 1em;
+    padding: 8px 0;
+  }
+}
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  border: 0;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;         /* Remove extra margin */
+  min-width: 140px;
+  max-width: 220px;
+  flex: 1 1 140px;
+}
+.table-responsive {
+  overflow-x: auto;
+}
+

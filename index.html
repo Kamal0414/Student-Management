@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Student Manager</h1>
+    </header>
+
+    <!-- ARIA live region for notifications -->
+    <div id="notification" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+
+    <section aria-labelledby="student-form-title">
+      <h2 id="student-form-title" class="visually-hidden">Add or Edit Student</h2>
+      <form id="student-form" autocomplete="off">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input id="age" name="age" type="number" min="1" required autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="grade">Grade</label>
+          <input id="grade" name="grade" type="text" required autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" required autocomplete="off">
+        </div>
+        <button type="submit" id="submitBtn">Add Student</button>
+      </form>
+    </section>
+
+    <section class="actions" aria-label="Filter and Sort Students">
+      <div class="form-group">
+        <label for="filterSubject" class="visually-hidden">Filter by Subject</label>
+        <input id="filterSubject" name="filterSubject" type="text" placeholder="Filter by subject" autocomplete="off">
+      </div>
+      <button type="button" id="filterButton">Filter</button>
+      <button type="button" id="sortByName">Sort by Name</button>
+      <button type="button" id="sortByGrade">Sort by Grade</button>
+    </section>
+
+    <section aria-labelledby="student-list-title">
+      <h2 id="student-list-title" class="visually-hidden">Student List</h2>
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Age</th>
+              <th scope="col">Grade</th>
+              <th scope="col">Subject</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="student-list"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
