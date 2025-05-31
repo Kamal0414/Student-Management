@@ -1,5 +1,4 @@
 # Student-Management
-Certainly! Here’s a professional, detailed **README.md** for your Student Manager project, ready for GitHub:
 
 ---
 
