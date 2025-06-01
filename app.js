@@ -1,7 +1,3 @@
-/**
- * Student Manager App - Improved Version
- * Features: Modular code, accessibility, enhanced validation, undo delete, loading indicator, export/import, notifications.
- */
 
 class Student {
   constructor(id, name, age, grade, subject) {
