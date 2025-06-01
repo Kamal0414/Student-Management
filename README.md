@@ -3,7 +3,6 @@
 A modern, responsive web app for managing student records.  
 Add, edit, delete, sort, filter, export, and import student data—all in your browser, with data saved locally.
 
-![Student Manager Screenshot](screenshot.png
 
 - **Add, edit, and delete** student records
 - **Sort** by name or grade
@@ -92,7 +91,3 @@ For major changes, please open an issue first to discuss what you’d like to ch
 
 ---
 
-> _Tip: Add a screenshot named `screenshot.png` in the repo root for the preview image above._
-
----
-Answer from Perplexity: pplx.ai/share
