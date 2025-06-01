@@ -18,8 +18,8 @@ Add, edit, delete, sort, filter, export, and import student data—all in your b
 
 
 Demo
-You can try a live demo by clicking here
-<url>remarkable-hummingbird-82d562.netlify.app<url>
+You can try a live demo by clicking here - 
+[remarkable-hummingbird-82d562.netlify.app](url)
 
 ## Getting Started
 
