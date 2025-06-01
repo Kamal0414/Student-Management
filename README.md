@@ -17,9 +17,6 @@ Add, edit, delete, sort, filter, export, and import student data—all in your b
 - **Modern UI** with notifications and smooth UX
 
 
-Demo
-You can try a live demo by clicking here - 
-[remarkable-hummingbird-82d562.netlify.app](url)
 
 ## Getting Started
 
